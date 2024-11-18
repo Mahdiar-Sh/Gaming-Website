@@ -29,6 +29,9 @@ export default function Nav() {
           <li className="text-white border-b-2 border-l-white border-r-white border-r border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             Store
           </li>
+          <li className="text-white border-b-2 border-l-white border-r-white border-r border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+            Review
+          </li>
           <li className="text-white border-b-2 border-r border-l-white border-r-white border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             Guides
           </li>
