@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body{
+  background-color: #181724;
+}
+
+@font-face{
+  src: url("./Inter Medium.otf");
+  font-family: 'INTER';
+
+}
+*{
+  font-family: 'INTER';
+}
+*::selection{
+  user-select: none;
+}

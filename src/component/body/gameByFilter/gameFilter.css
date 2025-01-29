@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.online > div {
+    transform: translateX(0px);
+    background: rgb(47, 47, 86);
+    transition: all .5s;
+}
+
+.unOnline > div {
+    transform: translateX(24px);
+    background: #ea580c;
+    transition: all .5s;
+}
+
+
+.free > div{
+    background: rgb(47, 47, 86);
+    transform: translateX(0px);
+    transition: all .5s;
+}
+
+.unFree > div{
+    background: #ea580c;
+    transform: translateX(25px);
+  transition: all .5s;
+}
+
+
+.online {    
+    background: #ea580c;
+    transition: all .5s;
+}
+
+.unOnline {
+
+    transition: all .5s;
+}
+
+
+.free{
+    background: #ea580c;
+    transition: all .5s;
+}
+
+.unFree{
+
+  transition: all .5s;
+}
+
+
+input[type="range"]::-webkit-slider-runnable-track{
+    background-color: #ea580c;
+    height: 17px;
+    border-radius: 10px;
+}
