@@ -2,16 +2,16 @@ import React from 'react'
 
 export default function ViewAll(props) {
   return (
-    <div className="flex flex-row my-12 justify-between items-center">
-    <div className="flex flex-row justify-center items-center space-x-24">
-      <h1 className="text-white text-3xl font-bold">{props.text}</h1>
-      <h1 className="text-[#c94830] text-2xl cursor-pointer hover:text-orange-800 ">
-        View All &gt;
+    <div className="flex flex-row mt-5 lg:my-12 mx-3 lg:mx-0 justify-center lg:!justify-between items-center">
+    <div className="flex flex-col lg:!flex-row  space-x-0 justify-center items-center lg:space-x-24">
+      <h1 className="text-white text-lg lg:text-3xl font-bold">{props.text}</h1>
+      <h1 className="text-[#c94830] text-sm lg:text-2xl cursor-pointer hover:text-orange-800 ">
+        View All
       </h1>
     </div>
-    <div>
-      <div className="space-x-3">
-        <button className="border focus:border-white border-gray-200 duration-200 p-3 rounded-lg">
+    <div className='lg:!block hidden'>
+      <div className="space-x-1 lg:space-x-3">
+        <button className="border focus:border-white border-gray-200 duration-200 p-1 lg:p-3 rounded-lg">
           <svg
             width="13"
             height="12"
@@ -25,7 +25,7 @@ export default function ViewAll(props) {
             />
           </svg>
         </button>
-        <button className="border p-3 active focus:border-white border-gray-200 duration-200 rounded-lg">
+        <button className="border p-1 lg:p-3 active focus:border-white border-gray-200 duration-200 rounded-lg">
           <svg
             width="13"
             height="12"

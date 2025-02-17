@@ -6,8 +6,8 @@ import GameOfTheMonth from "../gameOfTheMonth/gameMonth.jsx";
 import GameReview from "../gameReviews/gameReview.jsx";
 import ComingGames from "../upComingGame/comingGame.jsx";
 import GameFilter from "../gameByFilter/gameFilter.jsx";
-import BlogPost from '../blogPost/blogPost.jsx';
-import GamingEx from "../gamingEx/gamingEx.jsx"
+import BlogPost from "../blogPost/blogPost.jsx";
+import GamingEx from "../gamingEx/gamingEx.jsx";
 export default function Trending() {
   const [gameBox] = useState([
     {
@@ -62,9 +62,9 @@ export default function Trending() {
     },
   ]);
   return (
-    <div id="bg-YOU" className="py-16 px-24">
+    <div id="bg-YOU" className="lg:py-16 py-5 lg:px-24">
       <ViewAll text={"Trending Game"}></ViewAll>
-      <div className="flex flex-row space-x-5 mt-12">
+      <div className="flex flex-col lg:!flex-row space-x-0 lg:!mx-0 mx-3 lg:!space-y-0 space-y-3 lg:!space-x-5 mt-5">
         {gameBox.map((x) => (
           <GameBox key={x.id} {...x}></GameBox>
         ))}

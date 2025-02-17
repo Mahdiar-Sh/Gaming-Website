@@ -38,7 +38,6 @@ export default function Header() {
       name: "Ghost Of Tushima",
       date: "Jul 17 , 2020",
       rating: 83,
-
       title:
         "Set In Feudal Japan, Players Follow Jin Sakai, A Samurai Warrior Defending His Home From Mongol Invaders. Blending Stealth, Swordplay, And Open-World Exploration, The Game Is A Tribute To Classic Samurai Films And The Code Of Honor That Drives Its Protagonist.",
       addres: "image/ghost-of-tsushima-background-block-01-ps4-en-21jul20.webp",
@@ -81,7 +80,7 @@ export default function Header() {
     }, 600);
   }
   return (
-    <section className="z-30 relative mt-24 flex flex-row py-[50px]">
+    <section className="z-30 hidden relative mt-24 lg:!flex flex-row py-[50px]">
       <img
         src={info.addres}
         className={`anim w-full h-full z-10 absolute bottom-0 top-0 ${

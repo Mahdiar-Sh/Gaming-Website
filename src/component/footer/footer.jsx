@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex flex-row justify-center p-14 bg-[#181724]">
+    <div className="flex flex-col lg:!flex-row justify-center lg:!p-14 mx-3 py-5 space-y-5 lg:!space-y-0 bg-[#181724]">
       <div className="basis-3/6 ">
         <div className="flex flex-row items-center space-x-5">
           <img src="img/icon/logo.png" className="" alt="" />
-          <h1 className="text-white text-lg">
+          <h1 className="text-white text-sm lg:!text-lg">
             Unleash your gaming potential with Prime Gaming
           </h1>
         </div>
@@ -33,28 +33,28 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="basis-1/6 space-y-5 flex flex-col">
+      <div className="lg:!basis-1/6 space-y-3 lg:!space-y-5 flex flex-col">
         <h1 className="text-center text-lg text-[#FF5733] ">Explore</h1>
         <p className="text-center text-gray-500 text-sm">Trending games</p>
         <p className="text-center text-gray-500 text-sm">Upcoming releases</p>
         <p className="text-center text-gray-500 text-sm">Reviews</p>
         <p className="text-center text-gray-500 text-sm">News</p>
       </div>
-      <div className="basis-1/6 space-y-5 flex flex-col">
+      <div className="lg:!basis-1/6 space-y-3 lg:!space-y-5 flex flex-col">
         <h1 className="text-center text-lg text-[#FF5733] ">Resources</h1>
         <p className="text-center text-gray-500 text-sm">FAQ</p>
         <p className="text-center text-gray-500 text-sm">Tutorials</p>
         <p className="text-center text-gray-500 text-sm">Community Firum</p>
         <p className="text-center text-gray-500 text-sm">Membership</p>
       </div>
-      <div className="basis-1/6 space-y-5 flex flex-col">
+      <div className="lg:!basis-1/6 space-y-3 lg:!space-y-5 flex flex-col">
         <h1 className="text-center text-lg text-[#FF5733] ">Programs</h1>
         <p className="text-center text-gray-500 text-sm">Game Of The Month</p>
         <p className="text-center text-gray-500 text-sm">Game Of The Year</p>
         <p className="text-center text-gray-500 text-sm">Developer Spotlight</p>
         <p className="text-center text-gray-500 text-sm">Beta Access</p>
       </div>
-      <div className="basis-3/12 text-center space-y-5 flex flex-col">
+      <div className="lg:!basis-3/12 text-center space-y-3 lg:!space-y-5 flex flex-col">
         <h1 className="text-center text-lg text-[#FF5733] ">Contact Us</h1>
         <p className="text-gray-500 text-sm">
           <span className="mr-2">

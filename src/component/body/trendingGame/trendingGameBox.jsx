@@ -7,26 +7,30 @@ export default function TrendingGameBox(props) {
   }
   let totalPrice = props.price - (props.price * props.off) / 100;
   return (
-    <div className="space-y-3 px-2 mx-auto  hover:border-violet-900 duration-200 cursor-pointer w-[19%] border-2 border-violet-950 p-1 rounded-lg">
+    <div className="lg:!space-y-3 lg:!px-2 lg:!mx-auto hover:border-violet-900 duration-200 cursor-pointer lg:!w-[19%] border-2 border-violet-950 p-1 rounded-lg">
       <img
         src={props.addres}
         alt=""
         className="mx-auto hover:scale-100 scale-95 duration-200 w-full h-64"
       />
-      <h1 className="text-lg  text-white">{props.name}</h1>
+      <h1 className=" text-[15px] lg:!text-lg text-white">{props.name}</h1>
       <div className="flex flex-row justify-between space-x-3">
         <div className="">
           <img
             src="img/icon/simple-icons_metacritic.svg"
             alt=""
-            className="inline scale-75"
+            className="inline scale-50 lg:!scale-75"
           />
           <span className="text-white text-sm">
             <span className="text-yellow-500 text-lg">{props.rating}</span>/ 100
           </span>
         </div>
         <div className="">
-          <img src="img/icon/uiw_date.svg" alt="" className="inline scale-75" />
+          <img
+            src="img/icon/uiw_date.svg"
+            alt=""
+            className="inline scale-50 lg:!scale-75"
+          />
           <span className="text-white text-sm">{props.date}</span>
         </div>
       </div>

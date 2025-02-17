@@ -24,17 +24,17 @@ export default function GameMonth() {
     setChangeImage(newImage[0].addres);
   }
   return (
-    <div className="mt-24">
-      <h1 className="text-white text-3xl text-center my-14">
+    <div className="mt-24 lg:!mx-0 mx-3">
+      <h1 className="text-white text-xl lg:!text-3xl text-center my-14">
         Game Of The Month
-        <hr className="w-[40%] mx-auto my-[5px]" />
+        <hr className="w-[60%] lg:!w-[40%] mx-auto my-[5px]" />
       </h1>
-      <div className="flex flex-row mx-10 justify-center  space-x-12">
-        <div className="basis-1/3">
-          <h1 className="text-white text-2xl font-bold my-5">
+      <div className="flex flex-col lg:!flex-row lg:!mx-10 justify-center  space-x-12">
+        <div className="lg:!basis-1/3 text-center mx-auto">
+          <h1 className="text-white text-lg lg:!text-2xl font-bold my-5">
             Black Myth Wukong
           </h1>
-          <p className="text-white text-md">
+          <p className="text-white text-justify text-md">
             Black Myth: Wukong is an action RPG inspired by the legendary
             Chinese novel "Journey to the West." The game takes players on an
             epic journey as the Monkey King, Wukong, battling through
@@ -49,22 +49,25 @@ export default function GameMonth() {
                 alt=""
                 className="inline mr-2"
               />
-              <span className="text-white">
+              <span className="text-white block mt-1 lg:!mt-0 lg:!inline">
                 {" "}
                 <span className="text-yellow-500 text-xl font-bold">93</span> /
                 100
               </span>
             </div>
             <div className=" text-center basis-1/2">
-              <h1 className="text-white text-xl">Genre :</h1>
+              <h1 className="text-white text-lg lg:!text-xl">Genre :</h1>
               <p className="text-gray-400 text-sm">Action RPG Advanture</p>
             </div>
-            <div className=" basis-1/2">
+            <div className="basis-1/2">
               <img src="img/icon/uiw_date.svg" alt="" className="inline mr-2" />
-              <span className="text-white"> May 19 , 2025</span>
+              <span className="text-white block mt-1 lg:!mt-0 lg:!inline text-sm">
+                {" "}
+                May 19 , 2025
+              </span>
             </div>
             <div className=" text-center basis-1/2">
-              <h1 className="text-white text-center text-xl">
+              <h1 className="text-white text-lg text-center lg:!text-xl">
                 Available for :
               </h1>
               <p className="text-gray-400 text-center text-sm">
@@ -95,92 +98,99 @@ export default function GameMonth() {
             </button>
           </div>
         </div>
-        <div className="basis-2/3">
-          <h1 className="text-white text-2xl my-5 font-bold">
+        <div className="lg:!basis-2/3 lg:!my-0 mt-8">
+          <h1 className="text-white text-center text-2xl my-5 font-bold">
             Trailer & Gallery
           </h1>
           <div className="relative">
             {changeImage ===
             "img/85717fcc536b7908d14f976ff4ee3dd659277956-480p.mp4" ? (
               <video
-              controls
-                className="w-fit h-[400px] mx-auto my-auto rounded-lg"
+                controls
+                className="w-fit h-[143px] lg:!h-[400px] mx-auto my-auto rounded-lg"
                 poster="img/black/black-myth-wukong-pc-game-steam-europe-and-us-and-canada-cover.jpg"
                 src={changeImage}
               ></video>
             ) : (
               <img
                 src={changeImage}
-                className="w-full h-[400px] mx-auto my-auto rounded-lg"
+                className="w-full h-[143px] lg:!h-[400px] mx-auto my-auto rounded-lg"
                 alt=""
               />
             )}
           </div>
-          <div className="flex flex-row space-x-5 justify-center my-10 items-center">
+          <div className="flex flex-row flex-wrap gap-3 lg:!gap-0 lg:!space-x-5 justify-center my-10 items-center">
             {imageBox.map((x) => (
               <Image change={changeImg} key={x.id} {...x}></Image>
             ))}
           </div>
         </div>
       </div>
-      <div className="flex flex-row mx-10 justify-center space-x-4">
-        <div className="space-y-1 basis-1/3">
-          <h1 className="text-white text-xl font-bold my-5">
+      <div className="flex flex-col lg:!flex-row lg:!mx-10 justify-center space-x-4">
+        <div className="space-y-1 lg:!basis-1/3">
+          <h1 className="text-white lg:!text-xl text-lg font-bold my-5">
             <span className="text-orange-700">Minimum</span> System Requirments
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">OS: </span>Windoes 10 64-Bit Or
-            Newer
+            <span className="lg:!text-xl text-lg text-white">OS: </span>Windoes
+            10 64-Bit Or Newer
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">CPU: </span>Intel Core i5-8400
-            / AMD 5 1600
+            <span className="lg:!text-xl text-lg text-white">CPU: </span>Intel
+            Core i5-8400 / AMD 5 1600
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">Memory: </span>16GB RAM
+            <span className="lg:!text-xl text-lg text-white">Memory: </span>16GB
+            RAM
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">GPU: </span>NVIDIA GeForce GTX
-            1060 (6GB) / AMD 5 1600
+            <span className="lg:!text-xl text-lg text-white">GPU: </span>NVIDIA
+            GeForce GTX 1060 (6GB) / AMD 5 1600
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">DirectX: </span>Version 11
+            <span className="lg:!text-xl text-lg text-white">DirectX: </span>
+            Version 11
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">Storage: </span>130GB Available
-            Space
+            <span className="lg:!text-xl text-lg text-white">Storage: </span>
+            130GB Available Space
           </h1>
         </div>
-        <div className="space-y-1 basis-1/3">
-          <h1 className="text-white text-xl my-5 font-bold">
+        <div className="space-y-1 lg:!basis-1/3">
+          <h1 className="text-white lg:!text-xl text-lg my-5 font-bold">
             <span className="text-orange-700">Recommended</span> System
             Requirments
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">OS: </span>Windoes 10 64-Bit Or
-            Newer
+            <span className="lg:!text-xl text-lg text-white">OS: </span>Windoes
+            10 64-Bit Or Newer
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">CPU: </span>Intel Core i7-9700
-            / AMD Radeon 5 5500
+            <span className="lg:!text-xl text-lg text-white">CPU: </span>Intel
+            Core i7-9700 / AMD Radeon 5 5500
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">Memory: </span>16GB RAM
+            <span className="lg:!text-xl text-lg text-white">Memory: </span>16GB
+            RAM
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">GPU: </span>NVIDIA GeForce GTX
-            2060 / AMD Radeon RX 5700Xt / INTEL Arc A750
+            <span className="lg:!text-xl text-lg text-white">GPU: </span>NVIDIA
+            GeForce GTX 2060 / AMD Radeon RX 5700Xt / INTEL Arc A750
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">DirectX: </span>Version 12
+            <span className="lg:!text-xl text-lg text-white">DirectX: </span>
+            Version 12
           </h1>
           <h1 className="text-lg text-gray-500">
-            <span className="text-xl text-white">Storage: </span>130GB Available
-            Space
+            <span className="lg:!text-xl text-lg text-white">Storage: </span>
+            130GB Available Space
           </h1>
         </div>
-        <div className="basis-1/3">
-          <form className="text-white bg-[#181724] p-5 rounded-lg" action="">
+        <div className="lg:!basis-1/3 lg:!my-0 my-3">
+          <form
+            className="text-white bg-[#181724] p-2 lg:!p-5 rounded-lg"
+            action=""
+          >
             <p className="mt-2 mb-1 text-sm">RAM</p>
             <input
               className="w-full p-1 rounded-md px-3 bg-transparent border border-white outline-none placeholder:text-[10px]"
@@ -199,10 +209,10 @@ export default function GameMonth() {
               placeholder="Enter Your CPU Detalis"
               type="text"
             />
-            <button className="w-full text-white bg-orange-700 p-1 text-center text-md my-2 rounded-2xl">
+            <button className="w-full text-white bg-orange-700 p-1 text-center text-sm my-2 rounded-2xl">
               Can Run I It ?
             </button>
-            <button className="w-full text-orange-700 border border-orange-700 p-1 text-center text-md my-1 rounded-2xl">
+            <button className="w-full text-orange-700 border border-orange-700 p-1 text-center text-sm my-1 rounded-2xl">
               Test My PC Automaticly
             </button>
           </form>

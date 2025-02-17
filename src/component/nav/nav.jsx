@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Nav() {
   return (
-    <nav className="flex flex-col lg:!flex-row lg:space-y-0 space-y-6 justify-between md:p-4 md:px-5 backdrop-blur-md fixed z-40 w-full top-0 items-center">
-      <div className="flex flex-row z-40 lg:!basis-3/12 space-x-3 items-center">
+    <nav className="flex flex-col lg:!flex-row py-3 lg:space-y-0 space-y-6 justify-between md:p-4 md:px-5 backdrop-blur-md lg:fixed z-40 w-full top-0 items-center">
+      <div className="flex flex-col lg:!flex-row z-40 lg:!basis-3/12 space-x-3 items-center">
         <img src="img/icon/logo.png" className="md:!mx-2" alt="" />
         <button className="group relative w-full md:!w-[50px]">
           <input
             type="text"
             placeholder="Search..."
-            className="outline-none w-[580px] md:!w-[320px] p-3 px-10 text-lg text-white duration-500 bg-black rounded-full"
+            className="outline-none w-full md:!w-[320px] p-3 px-10 text-lg text-white duration-500 bg-black rounded-full"
           />
           <img
             src="img//icon/search.svg"
@@ -19,23 +19,23 @@ export default function Nav() {
         </button>
       </div>
       <div className="z-40 lg:!basis-3/6 mx-auto text-center">
-        <ul className="flex flex-wrap flex-row justify-center space-x-3 items-center">
-          <li className="text-white border-l-white border-r-white border-r border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+        <ul className="flex flex-wrap flex-row justify-center  items-center">
+          <li className="text-white lg:!px-6 px-1 hover:duration-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             Home
           </li>
-          <li className="text-white border-l-white border-r-white border-r border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+          <li className="text-white lg:!px-6 px-1 hover:duration-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             News
           </li>
-          <li className="text-white border-l-white border-r-white border-r border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+          <li className="text-white lg:!px-6 px-1 hover:duration-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             Store
           </li>
-          <li className="text-white border-l-white border-r-white border-r border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+          <li className="text-white lg:!px-6 px-1 hover:duration-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             Review
           </li>
-          <li className="text-white border-r border-l-white border-r-white border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+          <li className="text-white lg:!px-6 px-1 hover:duration-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             Guides
           </li>
-          <li className="text-white border-r border-l-white border-r-white border-l px-6 hover:duration-500 rounded-full  border-opacity-0 hover:border-opacity-100 border-red-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
+          <li className="text-white lg:!px-6 px-1 hover:duration-500 text-lg cursor-pointer text-center hover:text-[#FF5733] duration-150">
             About Us
           </li>
         </ul>

@@ -57,9 +57,9 @@ export default function GameReview() {
     },
   ]);
   return (
-    <div className="text-white my-28">
+    <div className="text-white lg:!my-28">
       <ViewAll text={"Game Reviews"}></ViewAll>
-      <div className="flex flex-row gap-5 my-10 flex-wrap">
+      <div className="flex flex-col lg:!flex-row gap-y-3 lg:!gap-5 justify-center items-center my-10 flex-wrap">
         {box.map((x) => (
           <GameBox key={x.id} {...x}></GameBox>
         ))}
