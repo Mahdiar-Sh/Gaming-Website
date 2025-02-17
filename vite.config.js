@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 
 export default defineConfig({
-  base: "/Gaming-Website/",
   plugins: [
     tailwindcss(),
     react()],

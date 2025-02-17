@@ -7,7 +7,7 @@ import './index.css'
 
 function App() {
   return (
-    <div className="container">
+    <div className="">
       <Nav></Nav>
       <Header></Header>
       <GameCategori></GameCategori>

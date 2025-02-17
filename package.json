@@ -1,13 +1,12 @@
 {
-  "homepage" : "https://Mahdiar-Sh.github.io/Gaming-Website",
-
+  "homepage": "https://Mahdiar-Sh.github.io/Gaming-Website",
   "name": "gamingwebsite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist", 
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -17,6 +16,7 @@
     "@tailwindcss/vite": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.5",
     "tailwindcss": "^4.0.0"
   },
   "devDependencies": {
