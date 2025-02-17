@@ -3,8 +3,8 @@ import BtnBox from "./btnBox.jsx";
 export default function GameBoxReview(props) {
   return (
     <div className="lg:!mx-0 mx-3 p-1 flex rounded-lg lg:!w-[49%] lg:!space-x-3 flex-col lg:!flex-row border border-violet-800">
-      <div id="BOXC" className="lg:!basis-1/4 ">
-        <img src={props.addres} className="mx-auto w-full h-full" alt="" />
+      <div id="BOXC" className="lg:!basis-1/4 lg:!mb-0 mb-3">
+        <img src={props.addres} className="mx-auto w-[200px] h-[220px] lg:!w-full lg:!h-full" alt="" />
       </div>
       <div className="lg:!basis-2/4 ">
         <h1 className="lg:!text-xl text-center lg:!text-left text-lg">
