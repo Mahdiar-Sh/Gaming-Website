@@ -102,7 +102,7 @@ export default function GameMonth() {
           <h1 className="text-white text-center text-2xl my-5 font-bold">
             Trailer & Gallery
           </h1>
-          <div className="relative">
+          <div className="relative mx-8 lg:!mx-0">
             {changeImage ===
             "img/85717fcc536b7908d14f976ff4ee3dd659277956-480p.mp4" ? (
               <video

@@ -159,114 +159,153 @@ export default function GameFilter() {
             <BtnFilter key={x} text={x}></BtnFilter>
           ))}
         </div>
-        <div className="my-10 flex lg:!space-y-0 space-y-3 flex-row lg:!flex-nowrap flex-wrap items-center justify-evenly">
-          <label className="text-white text-lg lg:!mr-2 mr-5" htmlFor="#pltfrm">
-            Platform
-          </label>
-          <select
-            className="lg:!w-2/5 py-2 px-2 rounded-lg font-thin text-gray-300 bg-[#181724]"
-            name=""
-            id="pltfrm"
-          >
-            <option value="">All</option>
-            <option value="">......</option>
-            <option value="">......</option>
-            <option value="">......</option>
-          </select>
-          <label className="text-white text-lg lg:!ml-14 mr-7  lg:!mr-2" htmlFor="#Pblshr">
-            Publisher
-          </label>
-          <select
-            className="lg:!w-2/5 py-2 px-2 rounded-lg font-thin text-gray-300 bg-[#181724]"
-            name=""
-            id="Pblshr"
-          >
-            <option value="">All</option>
-            <option value="">......</option>
-            <option value="">......</option>
-            <option value="">......</option>
-          </select>
-          <label className="text-white text-lg lg:!ml-14 mr-7 lg:!mr-2" htmlFor="#Plyrs">
-            Players
-          </label>
-          <select
-            className="lg:!w-2/5 py-2 px-2 rounded-lg font-thin text-gray-300 bg-[#181724]"
-            name=""
-            id="Plyrs"
-          >
-            <option value="">All</option>
-            <option value="">......</option>
-            <option value="">......</option>
-            <option value="">......</option>
-          </select>
+        <div className="my-10 flex lg:!space-y-0 flex-col space-y-3 lg:!flex-row justify-center items-center">
+          <div className="flex flex-row justify-around items-center">
+            <label
+              className="text-white text-lg lg:!mr-2 mr-2"
+              htmlFor="#pltfrm"
+            >
+              Platform
+            </label>
+            <select
+              className="w-44 py-2 px-2 rounded-lg font-thin text-gray-300 bg-[#181724]"
+              name=""
+              id="pltfrm"
+            >
+              <option value="">All</option>
+              <option value="">......</option>
+              <option value="">......</option>
+              <option value="">......</option>
+            </select>
+          </div>
+          <div className="flex flex-row justify-center items-center">
+            <label
+              className="text-white text-lg lg:!ml-14 mr-2  lg:!mr-2"
+              htmlFor="#Pblshr"
+            >
+              Publisher
+            </label>
+            <select
+              className="w-44 py-2 px-2 rounded-lg font-thin text-gray-300 bg-[#181724]"
+              name=""
+              id="Pblshr"
+            >
+              <option value="">All</option>
+              <option value="">......</option>
+              <option value="">......</option>
+              <option value="">......</option>
+            </select>
+          </div>
+          <div className="flex flex-row justify-center items-center">
+            <label
+              className="text-white text-lg lg:!ml-14 mr-2 lg:!mr-2"
+              htmlFor="#Plyrs"
+            >
+              Players
+            </label>
+            <select
+              className="w-44 py-2 px-2 rounded-lg font-thin text-gray-300 bg-[#181724]"
+              name=""
+              id="Plyrs"
+            >
+              <option value="">All</option>
+              <option value="">......</option>
+              <option value="">......</option>
+              <option value="">......</option>
+            </select>
+          </div>
         </div>
-        <div className="my-10 flex flex-row lg:!flex-nowrap flex-wrap items-center">
-          <label className="text-white text-lg lg:!mx-7" htmlFor="#pltfrm">
-            Release Year{" "}
-            <span className="text-gray-500 text-sm text-center mr-1">
-              (2000-2024)
-            </span>
-          </label>
-          <input
-            type="range"
-            step={1}
-            onChange={chengYears}
-            value={year}
-            min={2000}
-            className="lg:!w-[240px] w-[190px] mb-5 mt-2"
-            max={2024}
-          />
-          <h1 className="text-white text-xs lg:!text-xl text-center ml-1">{year}</h1>
-          <label className="text-white text-lg lg:!mx-7" htmlFor="#Pblshr">
-            Rating
-            <span className="text-gray-500 text-sm text-center ml-1">
-              (0-100)
-            </span>
-          </label>
-          <input
-            type="range"
-            step={1}
-            onChange={chengRanting}
-            value={rating}
-            min={0}
-            className="lg:!w-[240px] w-[190px] mb-5 mt-2"
-            max={100}
-          />
-          <h1 className="text-white text-xs lg:!text-xl text-center ml-1">{rating}</h1>
-          <label htmlFor="#online" className="lg:!mx-5 mx-2 text-sm lg:!text-lg text-white">
-            Online
-          </label>
-          <button
-            id="online"
-            onClick={disable}
-            className={`group relative cursor-pointer p-1 w-[55px] h-[27px] border-4  hover:shadow-orange-600 border-orange-600 ${
-              btnOnline ? "online" : "unOnline"
-            } rounded-full`}
-          >
-            <div
-              className={`absolute my-auto top-0 bottom-0 left-1 w-[15px] rounded-full bg-[#FF5733] h-[15px] transition-all `}
-            ></div>
-          </button>
-          <label htmlFor="#free" className="lg:!mx-5 mx-2 text-sm lg:!text-lg text-white">
-            Free
-          </label>
-          <button
-            id="free"
-            onClick={disable1}
-            className={`relative cursor-pointer p-1 w-[55px] h-[27px] border-4  hover:shadow-orange-600 border-orange-600  rounded-full ${
-              btnFree ? "free" : "unFree"
-            }`}
-          >
-            <div
-              className={`absolute my-auto top-0 bottom-0 left-1 w-[15px] rounded-full bg-[#FF5733] h-[15px] transition-all`}
-            ></div>
-          </button>
+        <div className="my-10 flex flex-col lg:!flex-row space-y-5 lg:!space-y-0 justify-center items-center">
+          <div className="flex lg:!flex-row space-x-0 space-y-5 items-center lg:!space-y-0 lg:!space-x-10 flex-col">
+            <div className="flex flex-row items-center">
+              <label
+                className="text-white lg:!text-lg text-[12px] lg:!mr-5 mr-2"
+                htmlFor="#pltfrm"
+              >
+                Release Year{" "}
+                <span className="text-gray-500 text-[10px] text-center mr-1">
+                  (2000-2024)
+                </span>
+              </label>
+              <input
+                type="range"
+                step={1}
+                onChange={chengYears}
+                value={year}
+                min={2000}
+                className="lg:!w-[220px] w-[170px]"
+                max={2024}
+              />
+              <h1 className="text-white text-xs lg:!text-xl text-center ml-1">
+                {year}
+              </h1>
+            </div>
+            <div className="flex flex-row items-center">
+              <label
+                className="text-white lg:!text-lg text-[12px] lg:!mr-5 mr-2"
+                htmlFor="#Pblshr"
+              >
+                Rating
+                <span className="text-gray-500 text-[10px] text-center ml-1">
+                  (0-100)
+                </span>
+              </label>
+              <input
+                type="range"
+                step={1}
+                onChange={chengRanting}
+                value={rating}
+                min={0}
+                className="lg:!w-[220px] w-[170px]"
+                max={100}
+              />
+              <h1 className="text-white text-xs lg:!text-xl text-center ml-1">
+                {rating}
+              </h1>
+            </div>
+          </div>
+          <div className="flex flex-row justify-center items-center">
+            <label
+              htmlFor="#online"
+              className="lg:!mx-5 mx-2 text-sm lg:!text-lg text-white"
+            >
+              Online
+            </label>
+            <button
+              id="online"
+              onClick={disable}
+              className={`group relative cursor-pointer p-1 w-[55px] h-[27px] border-4  hover:shadow-orange-600 border-orange-600 ${
+                btnOnline ? "online" : "unOnline"
+              } rounded-full`}
+            >
+              <div
+                className={`absolute my-auto top-0 bottom-0 left-1 w-[15px] rounded-full bg-[#FF5733] h-[15px] transition-all `}
+              ></div>
+            </button>
+            <label
+              htmlFor="#free"
+              className="lg:!mx-5 mx-2 text-sm lg:!text-lg text-white"
+            >
+              Free
+            </label>
+            <button
+              id="free"
+              onClick={disable1}
+              className={`relative cursor-pointer p-1 w-[55px] h-[27px] border-4  hover:shadow-orange-600 border-orange-600  rounded-full ${
+                btnFree ? "free" : "unFree"
+              }`}
+            >
+              <div
+                className={`absolute my-auto top-0 bottom-0 left-1 w-[15px] rounded-full bg-[#FF5733] h-[15px] transition-all`}
+              ></div>
+            </button>
+          </div>
         </div>
         <button className=" w-full mx-auto hover:bg-orange-700 duration-150 text-white text-center py-2 px-2 lg:!mt-3 bg-[#FF5733] rounded-2xl">
           Search For Games
         </button>
       </form>
-      <div className="flex lg:!mx-0 space-y-3 lg:!space-y-0 flex-col flex-wrap gap-1 lg:!flex-row lg:!space-x-5 mt-12">
+      <div className="flex mx-12 lg:!mx-0 space-y-3 lg:!space-y-0 flex-col flex-wrap gap-1 lg:!flex-row lg:!space-x-5 mt-12">
         {gameBox.map((x) => (
           <BoxSearch key={x.id} {...x}></BoxSearch>
         ))}

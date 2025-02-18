@@ -64,7 +64,7 @@ export default function Trending() {
   return (
     <div id="bg-YOU" className="lg:py-16 py-5 lg:px-24">
       <ViewAll text={"Trending Game"}></ViewAll>
-      <div className="flex flex-col lg:!flex-row space-x-0 lg:!mx-0 mx-3 lg:!space-y-0 space-y-3 lg:!space-x-5 mt-5">
+      <div className="flex flex-col lg:!flex-row space-x-0 lg:!mx-0 mx-12 lg:!space-y-0 space-y-3 lg:!space-x-5 mt-5">
         {gameBox.map((x) => (
           <GameBox key={x.id} {...x}></GameBox>
         ))}

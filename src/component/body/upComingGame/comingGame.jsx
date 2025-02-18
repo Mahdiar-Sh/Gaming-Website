@@ -37,7 +37,7 @@ export default function ComingGame() {
   return (
     <div className='mt-10'>
       <ViewAll text={"Up Coming Games"}></ViewAll>
-      <div className="flex lg:!mx-0 mx-3 space-y-3 lg:!space-y-0 flex-col lg:!flex-row lg:!space-x-5 mt-12">
+      <div className="flex lg:!mx-0 mx-12 space-y-3 lg:!space-y-0 flex-col lg:!flex-row lg:!space-x-5 mt-12">
       {gameBox.map( x => 
         <GameBox key={x.id} {...x}></GameBox>
       )}
